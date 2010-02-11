@@ -21,7 +21,6 @@ function rentasite_profile_modules() {
   $modules = array(
     'color',
     'help',
-    'menu',
    );
 
   return $modules;
