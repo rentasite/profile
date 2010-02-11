@@ -35,7 +35,6 @@ function _rentasite_core_modules() {
     'admin',
     'better_formats',
     'captcha',
-    'ckeditor',
     'context',
     'context_contrib',
     'context_ui',
