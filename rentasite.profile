@@ -50,11 +50,12 @@ function _rentasite_core_modules() {
     'nodewords_basic',
     'path',
     'pathauto',
-    'rentasite',
     'schema',
     'strongarm',
     'token',
     'vertical_tabs',
+  // Custom modules
+    'rentasite',
   );
 }
 
@@ -117,60 +118,6 @@ function rentasite_profile_tasks(&$task, $url) {
     db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'nista'");
     db_query("UPDATE {blocks} SET region = '' WHERE theme = 'nista'");
     variable_set('theme_default', 'nista');
-
-    // Minified compression by default
-    variable_set('jquery_update_compression_type','min');
-
-    // Nodewords metatags settings
-    variable_set('nodewords_edit', array(
-      'description'   => 'description',
-      'abstract'      => 0,
-      'canonical'     => 0,
-      'copyright'     => 0,
-      'keywords'      => 0,
-      'revisit-after' => 0,
-      'robots'        => 0,
-    ));
-    variable_set('nodewords_head', array(
-      'description'   => 'description',
-      'abstract'      => 0,
-      'canonical'     => 0,
-      'copyright'     => 0,
-      'keywords'      => 0,
-      'revisit-after' => 0,
-      'robots'        => 0,
-    ));
-
-    // IMCE profile for trusted users
-    $user_profile = array(
-      'name'        => 'Users',
-      'extensions'  => 'gif png jpg jpeg doc docx rtf txt xls csv odt ods pdf',
-      'directories' => array(
-        array(
-          'name' => 'users/u%uid',
-          'subnav' => 1,
-          'browse' => 1,
-          'upload' => 1,
-          'thumb'  => 1,
-          'delete' => 1,
-          'resize' => 1,
-        ),
-        array(
-          'name'   => 'users/pub',
-          'subnav' => 0,
-          'browse' => 1,
-          'upload' => 1,
-          'thumb'  => 1,
-          'delete' => 0,
-          'resize' => 1,
-        ),
-      ),
-    );
-    $imce_profiles = variable_get('imce_profiles', array());
-    $imce_profiles[3] = array_merge($imce_profiles[1],$user_profile);
-    variable_set('imce_profiles', $imce_profiles);
-
-    //TODO: Use htmlpurifier filter for full-html input format
 
     $task = 'finished';
   }
