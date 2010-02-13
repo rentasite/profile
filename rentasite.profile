@@ -54,6 +54,7 @@ function _rentasite_core_modules() {
     'schema',
     'strongarm',
     'token',
+    'transliteration',
     'vertical_tabs',
   // Custom modules
     'rentasite',
