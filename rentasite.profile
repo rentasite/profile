@@ -22,6 +22,7 @@ function rentasite_profile_modules() {
     'color',
     'help',
     'menu',
+    'libraries',
    );
 
   return $modules;
@@ -46,7 +47,6 @@ function _rentasite_core_modules() {
     'imce',
     'jquery_ui',
     'jquery_update',
-    'libraries',
     'nodewords',
     'nodewords_basic',
     'path',
