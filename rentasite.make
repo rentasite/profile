@@ -53,6 +53,7 @@ projects[views_bonus][subdir] = "contrib"
 projects[views_gallery][subdir] = "contrib"
 projects[views_slideshow][subdir] = "contrib"
 projects[webform][subdir] = "contrib"
+projects[webformblock][subdir] = "contrib"
 
 ; Custom projects
 projects[rentasite][type] = "module"
