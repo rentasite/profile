@@ -51,7 +51,6 @@ function _rentasite_core_modules() {
     'nodewords_basic',
     'path',
     'pathauto',
-    'schema',
     'strongarm',
     'token',
     'transliteration',
