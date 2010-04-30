@@ -6,6 +6,7 @@ core = 6.x
 projects[admin][subdir] = "contrib"
 projects[admin][version] = "2.0-alpha5"
 projects[advanced_help][subdir] = "contrib"
+projects[backup_migrate][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
 projects[cck][subdir] = "contrib"
