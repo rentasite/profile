@@ -3,6 +3,7 @@
 core = 6.x
 
 ; Contrib projects
+projects[apachesolr][subdir] = "contrib"
 projects[admin][subdir] = "contrib"
 projects[admin][version] = "2.0-alpha5"
 projects[advanced_help][subdir] = "contrib"
@@ -34,6 +35,8 @@ projects[jquery_ui][subdir] = "contrib"
 projects[jquery_update][subdir] = "contrib"
 projects[libraries][subdir] = "contrib"
 projects[lightbox2][subdir] = "contrib"
+projects[memcache][subdir] = "contrib"
+projects[memcache][version] = "1.5-rc1"
 projects[menu_icons][subdir] = "contrib"
 projects[mimedetect][subdir] = "contrib"
 projects[nice_menus][subdir] = "contrib"
@@ -49,6 +52,7 @@ projects[transliteration][subdir] = "contrib"
 projects[ubercart][subdir] = "contrib"
 projects[uc_wishlist][subdir] = "contrib"
 projects[uc_termsofservice][subdir] = "contrib"
+projects[varnish][subdir] = "contrib"
 projects[vertical_tabs][subdir] = "contrib"
 projects[views][subdir] = "contrib"
 projects[views_attach][subdir] = "contrib"
@@ -113,3 +117,9 @@ libraries[jscroller2][download][url][] = "http://jscroller2.googlecode.com/files
 libraries[jscroller2][download][url][] = "http://jscroller2.googlecode.com/files/jscroller2-1.1.css"
 libraries[swfupload][download][type] = "get"
 libraries[swfupload][download][url] = "http://cloud.github.com/downloads/rentasite/library_swfupload/SWFUpload_v2.2.0.1_Core.tar.gz"
+
+; ApacheSolr
+libraries[SolrPhpClient][download][type] = "get"
+libraries[SolrPhpClient][download][url] = "http://solr-php-client.googlecode.com/files/SolrPhpClient.r22.2009-11-09.tgz"
+libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
+libraries[SolrPhpClient][destination] = "modules/contrib/apachesolr
