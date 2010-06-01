@@ -23,6 +23,10 @@ function rentasite_profile_modules() {
     'help',
     'menu',
     'libraries',
+    'taxonomy',
+    'syslog',
+    'locale',
+    'dblog',
    );
 
   return $modules;
