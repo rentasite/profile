@@ -77,6 +77,11 @@ projects[pages][download][type] = "git"
 projects[pages][download][url] = "git://github.com/rentasite/pages.git"
 projects[pages][download][branch] = "master"
 projects[pages][subdir] = "features"
+projects[wysiwyg_ckeditor][type] = "module"
+projects[wysiwyg_ckeditor][download][type] = "git"
+projects[wysiwyg_ckeditor][download][url] = "git://github.com/rentasite/wysiwyg_ckeditor.git"
+projects[wysiwyg_ckeditor][download][branch] = "master"
+projects[wysiwyg_ckeditor][subdir] = "features"
 
 ; Themes
 projects[] = zen
