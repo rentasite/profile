@@ -27,6 +27,7 @@ function rentasite_profile_modules() {
     'syslog',
     'locale',
     'dblog',
+    'update',
    );
 
   // performance tuners
