@@ -45,7 +45,6 @@ function _rentasite_core_modules() {
   return array(
   // Contributed Modules
     'admin',
-    'better_formats',
     'captcha',
     'context',
     'context_contrib',
@@ -53,8 +52,6 @@ function _rentasite_core_modules() {
     'ctools',
     'diff',
     'features',
-    'htmlpurifier',
-    'imce',
     'jquery_ui',
     'jquery_update',
     'nodewords',
