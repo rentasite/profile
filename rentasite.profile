@@ -29,6 +29,12 @@ function rentasite_profile_modules() {
     'dblog',
    );
 
+  // performance tuners
+  if (file_exists('./pressflow-6')) {
+    $modules[] = 'cookie_cache_bypass';
+    $modules[] = 'varnish';
+  }
+
   return $modules;
 }
 
