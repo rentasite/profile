@@ -23,7 +23,17 @@ function rentasite_profile_modules() {
     'help',
     'menu',
     'libraries',
+    'taxonomy',
+    'syslog',
+    'locale',
+    'dblog',
    );
+
+  // performance tuners
+  if (file_exists('./pressflow-6')) {
+    $modules[] = 'cookie_cache_bypass';
+    $modules[] = 'varnish';
+  }
 
   return $modules;
 }
@@ -35,7 +45,6 @@ function _rentasite_core_modules() {
   return array(
   // Contributed Modules
     'admin',
-    'better_formats',
     'captcha',
     'context',
     'context_contrib',
@@ -43,8 +52,6 @@ function _rentasite_core_modules() {
     'ctools',
     'diff',
     'features',
-    'htmlpurifier',
-    'imce',
     'jquery_ui',
     'jquery_update',
     'nodewords',
