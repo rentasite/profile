@@ -65,19 +65,7 @@ projects[webform][subdir] = "contrib"
 projects[webformblock][subdir] = "contrib"
 projects[wysiwyg][subdir] = "contrib"
 
-; Custom projects
-projects[rentasite][type] = "module"
-projects[rentasite][download][type] = "git"
-projects[rentasite][download][url] = "git://github.com/rentasite/module.git"
-projects[rentasite][download][branch] = "master"
-projects[rentasite][subdir] = "custom"
-
 ; Features
-projects[pages][type] = "module"
-projects[pages][download][type] = "git"
-projects[pages][download][url] = "git://github.com/rentasite/pages.git"
-projects[pages][download][branch] = "master"
-projects[pages][subdir] = "features"
 projects[wysiwyg_ckeditor][type] = "module"
 projects[wysiwyg_ckeditor][download][type] = "git"
 projects[wysiwyg_ckeditor][download][url] = "git://github.com/rentasite/wysiwyg_ckeditor.git"
