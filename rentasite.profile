@@ -20,13 +20,15 @@ function rentasite_profile_details() {
 function rentasite_profile_modules() {
   $modules = array(
     'color',
-    'help',
-    'menu',
-    'libraries',
-    'taxonomy',
-    'syslog',
-    'locale',
+    'comment',
     'dblog',
+    'help',
+    'libraries',
+    'locale',
+    'menu',
+    'syslog',
+    'search',
+    'taxonomy',
     'update',
    );
 
@@ -57,14 +59,13 @@ function _rentasite_core_modules() {
     'jquery_update',
     'nodewords',
     'nodewords_basic',
+    'nodewords_ui',
     'path',
     'pathauto',
     'strongarm',
     'token',
     'transliteration',
     'vertical_tabs',
-  // Custom modules
-    'rentasite',
   );
 }
 
@@ -114,6 +115,70 @@ function rentasite_profile_tasks(&$task, $url) {
   }
 
   if ($task == 'rentasite-configure') {
+
+    // Insert default user-defined node types into the database. For a complete
+    // list of available node type attributes, refer to the node type API
+    // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
+    $types = array(
+      array(
+        'type' => 'page',
+        'name' => st('Page'),
+        'module' => 'node',
+        'description' => st("A <em>page</em> is a simple method for creating and displaying information that rarely changes, such as an \"About us\" section of a website. By default, a <em>page</em> entry does not allow visitor comments and is not featured on the site's initial home page."),
+        'custom' => TRUE,
+        'modified' => TRUE,
+        'locked' => FALSE,
+        'help' => '',
+        'min_word_count' => '',
+      ),
+    );
+
+    foreach ($types as $type) {
+      $type = (object) _node_type_set_defaults($type);
+      node_type_save($type);
+    }
+
+    // Default page to not be promoted and have comments disabled.
+    variable_set('node_options_page', array('status', 'revision'));
+    variable_set('comment_page', COMMENT_NODE_DISABLED);
+
+    // Don't display date and author information for page nodes by default.
+    $theme_settings = variable_get('theme_settings', array());
+    $theme_settings['toggle_node_info_page'] = FALSE;
+    variable_set('theme_settings', $theme_settings);
+
+    // Minified compression by default
+    variable_set('jquery_update_compression_type','min');
+
+    // Nodewords metatags settings
+    $enabled_meta_tags = array(
+      'description'   => 'description',
+      'abstract'      => 0,
+      'canonical'     => 0,
+      'copyright'     => 0,
+      'keywords'      => 0,
+      'revisit-after' => 0,
+      'robots'        => 0,
+    );
+    variable_set('nodewords_edit', $enabled_meta_tags);
+    variable_set('nodewords_head', $enabled_meta_tags);
+    variable_set('nodewords_ui_edit', $enabled_meta_tags);
+
+    // add 'editor' role
+    db_query("INSERT INTO {role} (name) VALUES ('%s')", 'editor');
+    $editor_rid = db_last_insert_id('role', 'rid');
+
+    // Set some permissions in the only ugly way possible
+    // To extend this, just add more 'role_id' => array('perms') items to the array
+    $perms = array(
+      1 => array('access content', 'search content', 'use advanced search'),
+      2 => array('access comments', 'access content', 'post comments', 'post comments without approval', 'search content', 'use advanced search'),
+      $editor_rid => array('access administration pages', 'administer menu', 'administer nodes', 'create url aliases', 'delete revisions', 'revert revisions', 'use admin toolbar', 'view revisions'),
+    );
+    foreach($perms as $role_id => $perms) {
+      db_query('DELETE FROM {permission} WHERE rid = %d', $role_id);
+      db_query("INSERT INTO {permission} (rid, perm) VALUES (%d, '%s')", $role_id, implode(', ', $perms));
+    }
 
     // Clear caches.
     drupal_flush_all_caches();
