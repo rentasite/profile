@@ -5,7 +5,7 @@ core = 6.x
 ; Contrib projects
 projects[apachesolr][subdir] = "contrib"
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-alpha5"
+projects[admin][version] = "2.0-beta3"
 projects[advanced_help][subdir] = "contrib"
 projects[backup_migrate][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
@@ -13,6 +13,7 @@ projects[captcha][subdir] = "contrib"
 projects[cck][subdir] = "contrib"
 projects[color_soc08][subdir] = "contrib"
 projects[conditional_styles][subdir] = "contrib"
+projects[context][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[custom_pagers][subdir] = "contrib"
 projects[custom_pagers][version] = "1.0-beta2"
@@ -78,11 +79,6 @@ projects[] = nista
 
 ; Patched.
 ; Explicit versions specified to ensure patches apply cleanly.
-
-; [#606816] Node forms drop out of context on validation error
-projects[context][subdir] = "contrib"
-projects[context][version] = "2.0-beta7"
-projects[context][patch][] = "http://drupal.org/files/issues/606816-1_node_form_context.patch"
 
 ; [#708266] decouple location of htmlpurifier library
 projects[htmlpurifier][subdir] = "contrib"
