@@ -33,7 +33,7 @@ function rentasite_profile_modules() {
    );
 
   // performance tuners
-  if (file_exists('./pressflow-6')) {
+  if (!file_exists('./sites/all/modules/contrib/devel')) {
     $modules[] = 'cookie_cache_bypass';
     $modules[] = 'varnish';
   }
