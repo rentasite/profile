@@ -19,6 +19,7 @@ projects[custom_pagers][subdir] = "contrib"
 projects[custom_pagers][version] = "1.0-beta2"
 projects[dialog][subdir] = "contrib"
 projects[diff][subdir] = "contrib"
+projects[emfield][subdir] = "contrib"
 projects[faq][subdir] = "contrib"
 projects[features][subdir] = "contrib"
 projects[feeds][subdir] = "contrib"
@@ -37,6 +38,7 @@ projects[jquery_ui][subdir] = "contrib"
 projects[jquery_update][subdir] = "contrib"
 projects[libraries][subdir] = "contrib"
 projects[lightbox2][subdir] = "contrib"
+projects[media_flickr][subdir] = "contrib"
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.5-rc1"
 projects[menu_icons][subdir] = "contrib"
@@ -76,6 +78,7 @@ projects[wysiwyg_ckeditor][subdir] = "features"
 ; Themes
 projects[] = zen
 projects[] = nista
+projects[tao][location] = http://code.developmentseed.org/fserver
 
 ; Patched.
 ; Explicit versions specified to ensure patches apply cleanly.
