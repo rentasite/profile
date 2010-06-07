@@ -76,6 +76,7 @@ projects[wysiwyg_ckeditor][subdir] = "features"
 ; Themes
 projects[] = zen
 projects[] = nista
+projects[tao][location] = http://code.developmentseed.org/fserver
 
 ; Patched.
 ; Explicit versions specified to ensure patches apply cleanly.
