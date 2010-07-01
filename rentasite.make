@@ -70,6 +70,13 @@ projects[webform][subdir] = "contrib"
 projects[webformblock][subdir] = "contrib"
 projects[wysiwyg][subdir] = "contrib"
 
+; Workaround module to let IMCE 2.x running under pressflow 6
+projects[imce_pressflow][type] = "module"
+projects[imce_pressflow][download][type] = "git"
+projects[imce_pressflow][download][url] = "git://github.com/rentasite/imce_pressflow.git"
+projects[imce_pressflow][download][branch] = "master"
+projects[imce_pressflow][subdir] = "contrib"
+
 ; Features
 projects[wysiwyg_ckeditor][type] = "module"
 projects[wysiwyg_ckeditor][download][type] = "git"
