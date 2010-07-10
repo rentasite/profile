@@ -108,8 +108,8 @@ projects[scrolltext][patch][] = "http://drupal.org/files/issues/scrolltext-using
 
 ; [#656814] fix notice: Undefined variable: title + duplicate code
 projects[views_attach][subdir] = "contrib"
-projects[scrolltext][version] = "2.2"
-projects[scrolltext][patch][] = "http://drupal.org/files/issues/va_theme.patch"
+projects[views_attach][version] = "2.2"
+projects[views_attach][patch][] = "http://drupal.org/files/issues/va_theme.patch"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
