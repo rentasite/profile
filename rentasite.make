@@ -62,7 +62,6 @@ projects[uc_termsofservice][subdir] = "contrib"
 projects[varnish][subdir] = "contrib"
 projects[vertical_tabs][subdir] = "contrib"
 projects[views][subdir] = "contrib"
-projects[views_attach][subdir] = "contrib"
 projects[views_bonus][subdir] = "contrib"
 projects[views_gallery][subdir] = "contrib"
 projects[views_slideshow][subdir] = "contrib"
@@ -106,6 +105,11 @@ projects[image_fupload][patch][] = "http://drupal.org/files/issues/image_fupload
 projects[scrolltext][subdir] = "contrib"
 projects[scrolltext][version] = "1.0-alpha1"
 projects[scrolltext][patch][] = "http://drupal.org/files/issues/scrolltext-using_jscroller2.patch"
+
+; [#656814] fix notice: Undefined variable: title + duplicate code
+projects[views_attach][subdir] = "contrib"
+projects[scrolltext][version] = "6.x-2.2"
+projects[scrolltext][patch][] = "http://drupal.org/files/issues/va_theme.patch"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
