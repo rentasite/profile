@@ -105,6 +105,11 @@ projects[image_fupload][subdir] = "contrib"
 projects[image_fupload][version] = "3.0-rc2"
 projects[image_fupload][patch][] = "http://drupal.org/files/issues/image_fupload-swfupload_as_library_1.patch"
 
+; [#722524] DO NOT accept local links
+projects[link][subdir] = "contrib"
+projects[link][version] = "2.9"
+projects[link][patch][] = "http://drupal.org/files/issues/external_link_validation-6--2-9.patch"
+
 ; [#681352] use jscroller2 for better w3c compatibility
 projects[scrolltext][subdir] = "contrib"
 projects[scrolltext][version] = "1.0-alpha1"
