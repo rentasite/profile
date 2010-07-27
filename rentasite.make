@@ -116,7 +116,7 @@ projects[link][patch][] = "http://drupal.org/files/issues/no_notice_0.patch"
 
 ; [#866226] fix notice: Undefined property: stdClass::$nid
 projects[nodewords][subdir] = "contrib"
-projects[nodewords][version] = "6.x-1.12-beta9"
+projects[nodewords][version] = "1.12-beta9"
 projects[nodewords][patch][] = "http://drupal.org/files/issues/nodewords_no_notice.patch"
 
 ; [#681352] use jscroller2 for better w3c compatibility
