@@ -119,7 +119,7 @@ projects[scrolltext][patch][] = "http://drupal.org/files/issues/scrolltext-using
 ; [#849880] fix notice: Undefined index: q in strongarm_init()
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0-rc1"
-projects[strongarm][patch][] = "http://drupal.org/files/issues/strongarm-fix-undefined-index.patch"
+projects[strongarm][patch][] = "http://drupal.org/files/issues/strongarm-fix-undefined-index_0.patch"
 
 ; [#656814] fix notice: Undefined variable: title + duplicate code
 projects[views_attach][subdir] = "contrib"
