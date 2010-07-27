@@ -46,7 +46,6 @@ projects[menu_icons][subdir] = "contrib"
 projects[mimedetect][subdir] = "contrib"
 projects[nice_menus][subdir] = "contrib"
 projects[nodereference_url][subdir] = "contrib"
-projects[nodewords][subdir] = "contrib"
 projects[panels][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
 projects[r4032login][subdir] = "contrib"
@@ -94,7 +93,7 @@ projects[boxes][subdir] = "contrib"
 projects[boxes][version] = "1.0-beta9"
 projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-editing-error-1-0-beta9.patch"
 
-; [#849880] fix notice: Undefined index: q in strongarm_init()
+; [#866208] fix notice: Undefined property: stdClass::$taxonomy
 projects[context][subdir] = "contrib"
 projects[context][version] = "2.0"
 projects[context][patch][] = "http://drupal.org/files/issues/context_no_notice.patch"
@@ -114,6 +113,11 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
 projects[link][patch][] = "http://drupal.org/files/issues/external_link_validation-6--2-9.patch"
 projects[link][patch][] = "http://drupal.org/files/issues/no_notice_0.patch"
+
+; [#866226] fix notice: Undefined property: stdClass::$nid
+projects[nodewords][subdir] = "contrib"
+projects[nodewords][version] = "6.x-1.12-beta9"
+projects[nodewords][patch][] = "http://drupal.org/files/issues/nodewords_no_notice.patch"
 
 ; [#681352] use jscroller2 for better w3c compatibility
 projects[scrolltext][subdir] = "contrib"
