@@ -53,7 +53,6 @@ projects[pathauto][subdir] = "contrib"
 projects[r4032login][subdir] = "contrib"
 projects[schema][subdir] = "contrib"
 projects[simplenews][subdir] = "contrib"
-projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
 projects[transliteration][subdir] = "contrib"
 projects[ubercart][subdir] = "contrib"
@@ -115,6 +114,11 @@ projects[link][patch][] = "http://drupal.org/files/issues/external_link_validati
 projects[scrolltext][subdir] = "contrib"
 projects[scrolltext][version] = "1.0-alpha1"
 projects[scrolltext][patch][] = "http://drupal.org/files/issues/scrolltext-using_jscroller2.patch"
+
+; [#849880] fix notice: Undefined index: q in strongarm_init()
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][version] = "2.0-rc1"
+projects[strongarm][patch][] = "http://drupal.org/files/issues/va_theme.patch"
 
 ; [#656814] fix notice: Undefined variable: title + duplicate code
 projects[views_attach][subdir] = "contrib"
