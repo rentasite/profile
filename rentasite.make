@@ -14,7 +14,6 @@ projects[cck][subdir] = "contrib"
 projects[color_soc08][subdir] = "contrib"
 projects[conditional_styles][subdir] = "contrib"
 projects[constant_contact][subdir] = "contrib"
-projects[context][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[custom_pagers][subdir] = "contrib"
 projects[custom_pagers][version] = "1.0-beta2"
@@ -94,6 +93,11 @@ projects[tao][location] = http://code.developmentseed.org/fserver
 projects[boxes][subdir] = "contrib"
 projects[boxes][version] = "1.0-beta9"
 projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-editing-error-1-0-beta9.patch"
+
+; [#849880] fix notice: Undefined index: q in strongarm_init()
+projects[context][subdir] = "contrib"
+projects[context][version] = "2.0"
+projects[context][patch][] = "http://drupal.org/files/issues/context_no_notice.patch"
 
 ; [#708266] decouple location of htmlpurifier library
 projects[htmlpurifier][subdir] = "contrib"
