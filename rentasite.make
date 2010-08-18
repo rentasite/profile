@@ -98,6 +98,8 @@ projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-undefined_index
 projects[context][subdir] = "contrib"
 projects[context][version] = "2.0"
 projects[context][patch][] = "http://drupal.org/files/issues/context_no_notice.patch"
+; [#886514] fix context_ui block bug
+projects[context][patch][] = "http://drupal.org/files/issues/context_ui-block_bug-6-x-2-0.patch"
 
 ; [#708266] decouple location of htmlpurifier library
 projects[htmlpurifier][subdir] = "contrib"
