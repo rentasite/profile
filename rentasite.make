@@ -92,11 +92,14 @@ projects[tao][location] = http://code.developmentseed.org/fserver
 projects[boxes][subdir] = "contrib"
 projects[boxes][version] = "1.0-beta9"
 projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-editing-error-1-0-beta9.patch"
+projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-undefined_index-6-x--1.0-beta9.patch"
 
 ; [#866208] fix notice: Undefined property: stdClass::$taxonomy
 projects[context][subdir] = "contrib"
 projects[context][version] = "2.0"
 projects[context][patch][] = "http://drupal.org/files/issues/context_no_notice.patch"
+; [#886514] fix context_ui block bug
+projects[context][patch][] = "http://drupal.org/files/issues/context_ui-block_bug-6-x-2-0.patch"
 
 ; [#708266] decouple location of htmlpurifier library
 projects[htmlpurifier][subdir] = "contrib"
