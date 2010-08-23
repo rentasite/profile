@@ -9,6 +9,7 @@ projects[admin][version] = "2.0-beta3"
 projects[advanced_help][subdir] = "contrib"
 projects[backup_migrate][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
+projects[boxes][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
 projects[cck][subdir] = "contrib"
 projects[color_soc08][subdir] = "contrib"
@@ -51,6 +52,7 @@ projects[pathauto][subdir] = "contrib"
 projects[r4032login][subdir] = "contrib"
 projects[schema][subdir] = "contrib"
 projects[simplenews][subdir] = "contrib"
+projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
 projects[transliteration][subdir] = "contrib"
 projects[ubercart][subdir] = "contrib"
@@ -88,12 +90,6 @@ projects[tao][location] = http://code.developmentseed.org/fserver
 ; Patched.
 ; Explicit versions specified to ensure patches apply cleanly.
 
-; [#836750] fix error when editing a box
-projects[boxes][subdir] = "contrib"
-projects[boxes][version] = "1.0-beta9"
-projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-editing-error-1-0-beta9.patch"
-projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-undefined_index-6-x--1.0-beta9.patch"
-
 ; [#866208] fix notice: Undefined property: stdClass::$taxonomy
 projects[context][subdir] = "contrib"
 projects[context][version] = "2.0"
@@ -126,11 +122,6 @@ projects[nodewords][patch][] = "http://drupal.org/files/issues/nodewords_no_noti
 projects[scrolltext][subdir] = "contrib"
 projects[scrolltext][version] = "1.0-alpha1"
 projects[scrolltext][patch][] = "http://drupal.org/files/issues/scrolltext-using_jscroller2.patch"
-
-; [#849880] fix notice: Undefined index: q in strongarm_init()
-projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0-rc1"
-projects[strongarm][patch][] = "http://drupal.org/files/issues/strongarm-fix-undefined-index_0.patch"
 
 ; [#656814] fix notice: Undefined variable: title + duplicate code
 projects[views_attach][subdir] = "contrib"
