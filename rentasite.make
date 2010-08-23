@@ -9,6 +9,7 @@ projects[admin][version] = "2.0-beta3"
 projects[advanced_help][subdir] = "contrib"
 projects[backup_migrate][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
+projects[boxes][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
 projects[cck][subdir] = "contrib"
 projects[color_soc08][subdir] = "contrib"
@@ -88,12 +89,6 @@ projects[tao][location] = http://code.developmentseed.org/fserver
 
 ; Patched.
 ; Explicit versions specified to ensure patches apply cleanly.
-
-; [#836750] fix error when editing a box
-projects[boxes][subdir] = "contrib"
-projects[boxes][version] = "1.0-beta9"
-projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-editing-error-1-0-beta9.patch"
-projects[boxes][patch][] = "http://drupal.org/files/issues/boxes-undefined_index-6-x--1.0-beta9.patch"
 
 ; [#866208] fix notice: Undefined property: stdClass::$taxonomy
 projects[context][subdir] = "contrib"
