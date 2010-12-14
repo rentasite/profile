@@ -54,7 +54,6 @@ projects[pathauto][subdir] = "contrib"
 projects[r4032login][subdir] = "contrib"
 projects[schema][subdir] = "contrib"
 projects[simplenews][subdir] = "contrib"
-projects[site_map][subdir] = "contrib"
 projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
 projects[transliteration][subdir] = "contrib"
@@ -124,6 +123,11 @@ projects[link][patch][] = "http://drupal.org/files/issues/no_notice_0.patch"
 projects[nodewords][subdir] = "contrib"
 projects[nodewords][version] = "1.12-beta9"
 projects[nodewords][patch][] = "http://drupal.org/files/issues/nodewords_no_notice.patch"
+
+; [#997982] fix notices: Undefined variables
+projects[site_menu][subdir] = "contrib"
+projects[site_menu][version] = "2.2"
+projects[site_menu][patch][] = "http://drupal.org/files/issues/site_map_no_noteces.patch"
 
 ; [#681352] use jscroller2 for better w3c compatibility
 projects[scrolltext][subdir] = "contrib"
