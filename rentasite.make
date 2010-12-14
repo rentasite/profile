@@ -127,7 +127,7 @@ projects[nodewords][patch][] = "http://drupal.org/files/issues/nodewords_no_noti
 ; [#997982] fix notices: Undefined variables
 projects[site_map][subdir] = "contrib"
 projects[site_map][version] = "2.2"
-projects[site_map][patch][] = "http://drupal.org/files/issues/site_map_no_noteces-2-2.patch"
+projects[site_map][patch][] = "http://drupal.org/files/issues/site_map_no_noteces-2-2_0.patch"
 
 ; [#681352] use jscroller2 for better w3c compatibility
 projects[scrolltext][subdir] = "contrib"
