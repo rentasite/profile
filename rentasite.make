@@ -85,7 +85,7 @@ projects[wysiwyg_ckeditor][download][branch] = "master"
 projects[wysiwyg_ckeditor][subdir] = "features"
 
 ; Themes
-projects[] = zen
+projects[zen][version] = "1.1"
 projects[] = nista
 projects[tao][location] = http://code.developmentseed.org/fserver
 
